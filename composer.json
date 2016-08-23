@@ -1,0 +1,30 @@
+{
+    "name": "flowrange/validation",
+    "description": "Data validation/filtration library",
+    "type": "library",
+    "version": "0.2.0-dev",
+    "authors": [
+        {
+        "name": "Florent Geffroy",
+        "email": "contact@flowrange.fr",
+        "homepage": "http://www.flowrange.fr/",
+        "role": "Developper"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "4.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Flowrange\\Validation\\": "src/"
+        },
+        "files": ["src/Rule/functions.php", "src/Filter/functions.php"]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Flowrange\\Validation\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
