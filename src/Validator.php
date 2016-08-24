@@ -218,6 +218,11 @@ class Validator
 
                 $isCurrentFieldRows = (substr($field, -2) === '[]');
                 $subValueIndex = 0;
+
+                if (!is_array($values)) {
+                    $values = [];
+                }
+
                 foreach ($values as &$value) {
 
                     $subFieldName = $fieldErrorName;
